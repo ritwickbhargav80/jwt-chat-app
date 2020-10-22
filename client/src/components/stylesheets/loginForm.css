@@ -21,3 +21,7 @@
 #login-form .login-form-button {
   width: 100%;
 }
+
+#login-form .ant-form-item:nth-child(4) .ant-form-item-control  {
+  text-align: center;
+}

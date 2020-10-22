@@ -12,6 +12,7 @@ const LoginForm = () => {
   return (
     <Row type="flex" justify="space-around" align="middle">
       <Col span={4}>
+        <h1>Login Form</h1>
         <div id="login-form">
           <Form
             name="normal_login"
@@ -59,9 +60,9 @@ const LoginForm = () => {
 
             <Form.Item>
               <Button type="primary" htmlType="submit" className="login-form-button">
-                Log in
+                LOGIN
               </Button>
-              Or <a href="/">register now!</a>
+              <a className="text-center" href="/">REGISTER HERE</a>
             </Form.Item>
           </Form>
         </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&family=Happy+Monkey&display=swap');
 
 #root {
   height: 100%;
@@ -9,4 +9,11 @@ body {
   font-family: 'Happy Monkey', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: 'Ribeye', cursive;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
 }
