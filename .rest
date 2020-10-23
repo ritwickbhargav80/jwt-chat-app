@@ -1,0 +1,23 @@
+# Index
+GET http://localhost:5000/api/v1/ HTTP/1.1
+
+# User
+
+### Register User
+POST http://localhost:5000/api/v1/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Ritik",
+    "email": "ritiksr25@gmail.com",
+    "password": "mypassword"
+}
+
+### Login User
+POST http://localhost:5000/api/v1/login HTTP/1.1
+content-type: application/json
+
+{
+    "email": "ritiksr25@gmail.com",
+    "password": "mypassword"
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Input, Button, Row, Col } from 'antd';
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import { MailOutlined, LockOutlined } from '@ant-design/icons';
 
 import "./stylesheets/loginForm.css";
 
@@ -11,7 +11,7 @@ const LoginForm = () => {
 
   return (
     <Row type="flex" justify="space-around" align="middle">
-      <Col span={4}>
+      <Col span={8}>
         <h1>Login Form</h1>
         <div id="login-form">
           <Form
@@ -22,17 +22,18 @@ const LoginForm = () => {
             }}
             onFinish={onFinish}
           >
-            Username
+            Email
             <Form.Item
-              name="username"
+              name="email"
               rules={[
                 {
                   required: true,
-                  message: 'Please input your Username!',
+                  message: 'Please enter your Email!',
+                  type: 'email'
                 },
               ]}
             >
-              <Input prefix={<UserOutlined className="site-form-item-icon" />} placeholder="Username" />
+              <Input prefix={<MailOutlined className="site-form-item-icon" />} placeholder="Email" />
             </Form.Item>
             
             Password
@@ -54,7 +55,7 @@ const LoginForm = () => {
 
             <Form.Item>
               <a className="login-form-forgot" href="/">
-                Forgot password
+                Forgot password?
               </a>
             </Form.Item>
 
@@ -62,7 +63,9 @@ const LoginForm = () => {
               <Button type="primary" htmlType="submit" className="login-form-button">
                 LOGIN
               </Button>
-              <a className="text-center" href="/">REGISTER HERE</a>
+              <Button type="secondary" className="register-form-button">
+                REGISTER
+              </Button>
             </Form.Item>
           </Form>
         </div>
